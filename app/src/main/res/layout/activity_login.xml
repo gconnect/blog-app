@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gconnectdroid.blogapp.LoginActivity">
+
+    <EditText
+        android:id="@+id/loginEmailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:padding="8dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_outline"
+        android:layout_below="@+id/nameField"/>
+    <EditText
+        android:id="@+id/loginpasswordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:padding="8dp"
+        android:inputType="textPassword"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_outline"
+        android:layout_below="@+id/loginEmailField"/>
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginpasswordField"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:background="@drawable/buttons"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_below="@+id/loginBtn"
+        android:id="@+id/googleBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.google.android.gms.common.SignInButton>
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_below="@id/googleBtn"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#0477bd"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Click to Sign Up!"
+        android:onClick="signup"/>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gconnectdroid.blogapp.RegisterActivity">
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/input_outline"
+        android:layout_margin="16dp"
+        android:hint="name"/>
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:padding="8dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_outline"
+        android:layout_below="@+id/nameField"/>
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:padding="8dp"
+        android:inputType="textPassword"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_outline"
+        android:layout_below="@+id/emailField"/>
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordField"
+        android:text="Sign Up"
+        android:textColor="#ffffff"
+        android:background="@drawable/buttons"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
